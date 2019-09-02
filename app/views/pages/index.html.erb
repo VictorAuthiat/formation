@@ -1,0 +1,13 @@
+<%= render 'shared/nav' %>
+<h1>Index</h1>
+
+
+<% if current_user %>
+  <div class="">
+    <ul>
+      <li>mail: <%= current_user.email %></li>
+      <li>last connection: <%= current_user.last %></li>
+      <li><%= current_user.ip %></li>
+    </ul>
+  </div>
+<% end %>
